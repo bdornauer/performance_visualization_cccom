@@ -1,6 +1,10 @@
-const { app } = require('./app');
+var express = require("express");
+var app = express();
 
-const PORT = 8080;
-app.listen(PORT, () => {
-    console.log(`Running on http://localhost:${PORT}`);
+app.listen(8080, () => {
+    console.log("Server running on port 8080");
+});
+
+app.get("/url", (req, res, next) => {
+    res.json(["Tony","Lisa","Michael","Ginger","Food"]);
 });
