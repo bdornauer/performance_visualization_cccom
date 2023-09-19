@@ -1,0 +1,25 @@
+{
+  "name": "webserver-performance-data",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "../webserver-performance-data/node_modules/.bin/jest",
+    "start": "node src/app.js"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "author": "Benedikt Dornauer",
+  "license": "ISC",
+  "description": "Sample-data for webserver-performance",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  }
+}
